@@ -1,6 +1,6 @@
 // variables to keep track of quiz state
 var currentQuestionIndex = 0;
-var time = questions.length * 15;
+var time = questions.length * 10;
 var timerId;
 
 // variables to reference DOM elements
@@ -13,9 +13,6 @@ var initialsEl = document.getElementById("initials");
 var wrongEl = document.getElementById("wrong");
 var correctEl = document.getElementById("correct");
 
-// sound effects
-var sfxRight = new Audio("assets/sfx/correct.wav");
-var sfxWrong = new Audio("assets/sfx/incorrect.wav");
 
 function startQuiz() {
   // hide start screen
@@ -75,22 +72,19 @@ function questionClick() {
     // display new time on page
     timerEl.textContent = time;
 
-    // play "wrong" sound effect
-    // sfxWrong.play();
-
     wrongEl.textContent = "Wrong!";
     // flash right/wrong feedback on page for half a second
     wrongEl.setAttribute("class", "wrong");
     setTimeout(function () {
       wrongEl.setAttribute("class", "wrong hide");
-    }, 1000);
+    }, 300);
   } else {
-    correctEl.textContent = "Correctttttt!";
+    correctEl.textContent = "Correct!";
     // flash right/wrong feedback on page for half a second
     correctEl.setAttribute("class", "correct");
     setTimeout(function () {
       correctEl.setAttribute("class", "correct hide");
-    }, 1000);
+    }, 300);
 
   }
 
