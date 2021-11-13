@@ -1,6 +1,11 @@
 body {
     font-family: Arial;
     font-size: 120%;
+    background: url(https://thumbs.dreamstime.com/b/neon-203425958.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   h1{
@@ -14,24 +19,26 @@ body {
   }
   
   a:hover {
-    color: #1db32a;
+    color: 	#FF9933;
   }
 
   .trivia{
     background-color: green;
     padding: 10px 10px 10px 10px;
+    text-transform: uppercase;
   }
   .wrapper{
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
+    background-color: #fff;
   }
 
   .triviaQ{
     padding: 10px 10px 10px 10px;
   }
   
-  button {
+  /* button {
     display: inline-block;
     margin: 5px;
     cursor: pointer;
@@ -39,18 +46,19 @@ body {
     background-color: green;
     border-radius: 5px;
     padding: 2px 10px;
-    color: white;
+    color: black;
     border: 0;
     transition: background-color 0.1s;
   }
   
   button:hover {
-    background-color: #1db32a;
-  }
+    background-color: #FF9933;
+  } */
   
   .choices button {
     display:inline-table;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 35px;
   }
   
@@ -94,8 +102,11 @@ body {
   #question-title{
     text-decoration: underline;
     text-align: center;
-    padding: 0px 10px 10px 10px;
-
+    padding: 10px 10px 10px 10px;
+    background-color: green;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
   }
   
   .hide {
@@ -105,12 +116,12 @@ body {
   .start {
     text-align: center;
   }
-  
+
+
   .scores {
     position: absolute;
     top: 10px;
     left: 10px;
-    /* margin-bottom: 5px; */
   }
   
   .wrong {
@@ -135,5 +146,6 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
+    color: #fff;
   }
   
