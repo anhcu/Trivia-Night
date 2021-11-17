@@ -1,89 +1,103 @@
 // list of all questions, choices, and answers
 var questions = [
     {
-        title: "How many legs does a spider have?",
+        title: "Who are Kylo Ren’s parents?",
         choices: [
-            "8", 
-            "9", 
-            "6", 
-            "4"],
-        answer: "8"
+            "Han Solo and BB-8", 
+            "Princess Leia and Han Sala", 
+            "Chewbacca and Princess Leia ", 
+            "Han Solo and Princess Leia."],
+        answer: "Han Solo and Princess Leia."
     },
     {
-        title: "What is the name of the toy cowboy in Toy Story.",
+        title: "According to Yoda, there are always how many Sith Lords…no more, no less?",
         choices: [
-            "Woody",
-            "Buzz", 
-            "Potatoe", 
-            "Mike"],
-        answer: "Woody"
+            "One ",
+            "Three", 
+            "Two (Rule of Two)", 
+            "Endless"],
+        answer: "Two (Rule of Two)"
     },
     {
-        title: "What is the color of an emerald?",
+        title: "Who killed Qui-Gon Jinn?",
         choices: [
-            "Yellow",
-            "Orange",
-            "Green",
-            "Pink"
+            " Darth Maul",
+            "Darth Sidious",
+            "Kylo Ren",
+            "R2-D2"
         ],
-        answer: "Green"
+        answer: "Darth Maul"
     },
     {
         title:
-            "What is something you hit with a hammer?.",
-        choices: ["Car", 
-            "Window", 
-            "A Nail", 
-            "Wood"],
-        answer: "A Nail"
+            "Where is Jabba the Hutt’s Palace located?",
+        choices: [
+            "Jordan", 
+            "Tatooine", 
+            "Iceland", 
+            "Wood"
+        ],
+        answer: "Tatooine"
     },
     {
         title:
-            "What’s the name of a place you go to see lots of animals?",
-        choices: ["Tinger King", 
-            "Zoo", 
-            "Bar", 
-            "Online"],
-        answer: "Zoo"
+            "What year did the first Star Wars movie come out?",
+        choices: [
+            "1977", 
+            "1988", 
+            "1966", 
+            "1976"
+        ],
+        answer: "1977"
     },
     {
-        title: "Whose nose grew longer every time he lied?",
+        title: "What is Mando’s real name from The Mandalorian?",
         choices: [
-            "Pinocchio",
-            "Batman",
-            "Woody",
-            "The person next to you"
+            "Ben Djarin",
+            "Loki",
+            "Din Djarin",
+            "Cara Dune"
         ],
-        answer: "Pinocchio"
+        answer: "Din Djarin"
     },
     {
-        title: " What is the name of the fairy in Peter Pan?",
+        title: "Who was Anakin Skywalker’s Padawan?",
         choices: [
-            "Pam",
-            "Tracy",
-            "Lisa",
-            "Tinkerbell"
+            "Darth Vader",
+            "Princess Leia",
+            "Ahsoka Tano",
+            "K-2SO"
         ],
-        answer: "Tinkerbell"
+        answer: "Ahsoka Tano"
     },
     {
-        title: "If you freeze water, what do you get?",
+        title: "Who is Palpatine’s granddaughter?",
         choices: [
-            "Ice",
-            "Ice Cream",
-            "Jello",
-            "Pan Cake"
+            "Tim",
+            "Tay",
+            "Rey",
+            "Ray"
         ],
-        answer: "Ice"
+        answer: "Rey"
     },
     {
-        title: "What colors are the stars on the American flag?",
+        title: "Where did Obi-Wan take Luke after his birth?",
         choices: [
-            "Red",
-            "White",
-            "Blue",
-            "Red and white"
+            "Tatooine",
+            "US",
+            "Wood",
+            "Tunisia"
         ],
-        answer: "White"
-    }
+        answer: "Tatooine"
+    },
+    {
+    title: "What is Baby Yoda’s real name?",
+    choices: [
+        "Giro",
+        "Grogu",
+        "Blue",
+        "Goku"
+    ],
+    answer: "Grogu"
+}
 ];

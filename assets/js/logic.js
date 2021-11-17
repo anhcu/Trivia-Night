@@ -72,19 +72,19 @@ function questionClick() {
     // display new time on page
     timerEl.textContent = time;
 
-    wrongEl.textContent = "Wrong!";
+    wrongEl.textContent = "👎";
     // flash right/wrong feedback on page for half a second
     wrongEl.setAttribute("class", "wrong");
     setTimeout(function () {
       wrongEl.setAttribute("class", "wrong hide");
-    }, 300);
+    }, 500);
   } else {
-    correctEl.textContent = "Correct!";
+    correctEl.textContent = "👍";
     // flash right/wrong feedback on page for half a second
     correctEl.setAttribute("class", "correct");
     setTimeout(function () {
       correctEl.setAttribute("class", "correct hide");
-    }, 300);
+    }, 500);
 
   }
 

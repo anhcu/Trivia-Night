@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     font-family: Arial;
     font-size: 120%;
-    background: url(https://thumbs.dreamstime.com/b/neon-203425958.jpg) no-repeat center center fixed; 
+    background: url(../img/triviaBG.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -22,23 +24,47 @@ body {
     color: 	#FF9933;
   }
 
+  .scores {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+  }
+  
+  .timer {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    color: #0b0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 5px;
+  }
+
   .trivia{
-    background-color: green;
-    padding: 10px 10px 10px 10px;
+    margin-top: 30px;
+    /* background-color: green; */
+    /* padding: 10px 10px 10px 10px; */
     text-transform: uppercase;
+    /* text-decoration: overline underline; */
+    font-family: 'Press Start 2P', cursive;
+    
   }
   .wrapper{
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 2px solid #0b0;
     text-align: center;
     background-color: #fff;
+    border-radius: 10px;
   }
 
   .triviaQ{
     padding: 10px 10px 10px 10px;
   }
   
-  /* button {
+  button {
     display: inline-block;
     margin: 5px;
     cursor: pointer;
@@ -46,46 +72,39 @@ body {
     background-color: green;
     border-radius: 5px;
     padding: 2px 10px;
-    color: black;
+    color: #fff;
     border: 0;
     transition: background-color 0.1s;
+    font-family: 'Press Start 2P', cursive;
   }
   
   button:hover {
-    background-color: #FF9933;
-  } */
+    background-color: rgb(9, 109, 51);
+  }
   
-  .choices button {
+  #choices button {
     display:inline-table;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 35px;
+    border-radius: 5px;
+    border: 1px solid green;
+    background-color: #fff;
+    color: green;
+    /* width: 150px;
+    height: 30px; */
+  }
+
+  #choices button:hover {
+    background-color: green;
+    color: #fff;
+    text-align: center;
   }
   
   input[type="text"] {
     font-size: 100%;
   }
-  
-  ol {
-    padding-left: 0px;
-    max-height: 400px;
-    overflow: auto;
-  }
-  
-  li {
-    padding: 5px;
-    list-style: decimal inside none;
-    background-color: #c6c5c0;
-    margin-bottom: 5px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  li:nth-child(odd) {
-    background-color: #c6c5c0;
-    /* margin-bottom: 5px; */
-  }
-  
+
   .wrapper {
     margin: 100px auto 0 auto;
     max-width: 600px;
@@ -103,10 +122,11 @@ body {
     text-decoration: underline;
     text-align: center;
     padding: 10px 10px 10px 10px;
-    background-color: green;
+    text-decoration: underline;
     font-size: 1.8em;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
   }
   
   .hide {
@@ -117,35 +137,72 @@ body {
     text-align: center;
   }
 
-
-  .scores {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-  
   .wrong {
-    font-style: italic;
-    font-size: 120%;
-    margin-top: 20px;
-    padding-top: 10px;
-    color: red;
+    font-size: 220%;
+    padding-bottom: 5px;
+    background-color: red;
     border-top: 2px solid #ccc;
   }
 
   .correct {
-    font-style: italic;
-    font-size: 120%;
-    margin-top: 20px;
-    padding-top: 10px;
-    color: green;
+    font-size: 220%;
+    padding-bottom: 5px;
+    background-color: green;
     border-top: 2px solid #ccc;
   }
-  
-  .timer {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #fff;
+
+  ol {
+    padding-left: 20px;
+    max-height: 400px;
+    overflow: auto;
+    padding-top: 30px;
+    text-decoration:  underline;
   }
   
+
+  li {
+    padding: 5px;
+    list-style: decimal inside none;
+    /* background-color: #c6c5c0; */
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 40px;
+  }
+  
+  li:nth-child(odd) {
+    /* background-color: #c6c5c0;
+    opacity: .4;  */
+    border-radius: 5px;
+
+  }
+
+  .ranking{
+    margin-top: 60px;
+  }
+  
+  .wrapperScores{
+    position: relative;
+    color: #0b0;
+    font-size: 21px;
+    line-height: 1.5;
+    padding: 32px 16px;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .wrapperScores{
+    text-align: center;
+  }
+
+  .wrapperScores table {
+    text-transform: uppercase;
+    width: 440px;
+    margin: 0 auto;
+  }
+  
+  .wrapperScores table th {
+    min-width: 140px;
+    text-align: left;
+  }
